@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.repositories">
+      <connectorCore
+            class="com.gridbuglabs.mylyn.evernote.core.EvernoteRepositoryConnector"
+            name="Evernote Connector Core">
+      </connectorCore>
+      <connectorUi
+            brandingIcon="icons/trac-icon.gif"
+            class="com.gridbuglabs.mylyn.evernote.ui.EvernoteConnectorUI">
+      </connectorUi>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.core.templates">
+      <repository
+            label="Evernote Mylyn Example"
+            repositoryKind="evernote"
+            urlRepository="http://gridbuglabs.com/repo">
+      </repository>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.editors">
+      <pageFactory
+            class="com.gridbuglabs.mylyn.evernote.ui.editor.EvernoteTaskEditorPageFactory"
+            id="com.gridbuglabs.mylyn.evernote.ui.pageFactory">
+      </pageFactory>
+   </extension>
+
+</plugin>
