@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Evernote Connector UI
+Bundle-SymbolicName: com.gridbuglabs.mylyn.evernote.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.gridbuglabs.mylyn.evernote.ui.EvernoteUIPlugin
+Bundle-Vendor: gridbuglabs.com
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.forms;bundle-version="3.5.200",
+ com.gridbuglabs.mylyn.evernote.core;bundle-version="1.0.0",
+ org.eclipse.mylyn.commons.core;bundle-version="[3.8.2,4.0.0)",
+ org.eclipse.mylyn.commons.ui;bundle-version="[3.8.2,4.0.0)",
+ org.eclipse.mylyn.tasks.core;bundle-version="[3.9.0,4.0.0)",
+ org.eclipse.mylyn.tasks.ui;bundle-version="[3.9.0,4.0.0)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
